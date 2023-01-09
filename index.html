@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rowerowy Świat</title>
+    <meta name="author" content="Mikołaj Więckowski, Amadeusz Reszke">
+    <meta name="description" content="Dyscypliny kolarstwa górskiego">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="res/logo_strona.svg" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+    <script src="https://kit.fontawesome.com/6d2ea823d0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Główny kontener strony -->
+    <div id="container" class="roundedCorners">
+
+        <!-- Banner na górze strony -->
+        <div id="banner">
+
+            <!-- Logo strony -->
+            <img id="logo" class="roundedCorners" alt="Rowerowy Świat" src="res/logo_strona.svg">
+
+            <!-- Wideo na banerze -->
+            <video autoplay muted loop id="video" class="roundedCorners" style="margin-top: 10px;">
+                <source src="res/banner.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+        <!-- Tytuł strony -->
+        <div>
+            <p class="tytul"> Dyscypliny kolarstwa górskiego </p>
+        </div>
+        
+        <!-- Panel wyboru -->
+        <div id="panel">
+
+            <!-- Elementy do kliknięcia -->
+            <div class="panelElement roundedCorners">
+                <a href="#a" onclick="SelectTile(this.id)" id="aa">
+                    <div class="click c1 roundedCorners">Freeride</div>
+                </a>
+            </div>
+
+            <div class="panelElement roundedCorners">
+                <a href="#b" id="bb" onclick="SelectTile(this.id)">
+                    <div class="click c2 roundedCorners">Downhill</div>
+                </a>
+            </div>
+
+            <div class="panelElement roundedCorners">
+                <a href="#c" id="cc" onclick="SelectTile(this.id)">
+                    <div class="click c3 roundedCorners">Cross Country</div>
+                </a>
+            </div>
+
+            <div class="panelElement roundedCorners">
+                <a href="#d" id="dd" onclick="SelectTile(this.id)">
+                    <div class="click c4 roundedCorners" id="dd">Enduro</div>
+                </a>
+            </div>
+
+            <div class="panelElement roundedCorners">
+                <a href="#e" id="ee" onclick="SelectTile(this.id)">
+                    <div class="click c5 roundedCorners">Dirt</div>
+                </a>
+            </div>
+
+            <div class="panelElement roundedCorners">
+                <a href="#f" id="ff" onclick="SelectTile(this.id)">
+                    <div class="click c6 roundedCorners">Trial</div>
+                </a>
+            </div>
+
+            <!-- kafle -->
+        </div>
+        <div id="a" class="kafle roundedCorners">
+            <div class="fota f1 roundedCorners">
+
+            </div>
+            <div class="tekst roundedCorners">
+                <p class="tekst2">
+                    <b>Freeride</b> - relatywnie nowa dyscyplina kolarstwa grawitacyjnego, w której w przeciwieństwie do downhillu zawodnicy nie skupiają się na czasie przejazdu określonej trasy, lecz na stylu i sztuczkach w powietrzu. We freeridzie nie wygrywa zawodnik z najlepszym czasem, lecz ten który stylem swojej jazdy i wykonywanymi ewolucjami najbardziej zaimponuje sędziom.
+                </p>
+            </div>
+
+        </div>
+        <div id="b" class="kafle roundedCorners">
+            <div class="fota f2 roundedCorners">
+
+            </div>
+            <div class="tekst roundedCorners">
+                <p class="tekst2">
+                    <b>Downhill</b> - ekstremalna odmiana kolarstwa górskiego, polega na zjeździe rowerem po stromych, technicznych trasach, urozmaiconych kamieniami, korzeniami, błotem, skoczniami i zeskokami. Wykorzystywane są rowery z pełną amortyzacją i o dużym skoku zawieszenia. Zawody wygrywa zawodnik, który pokona trasę najszybciej.
+                </p>
+            </div>
+
+        </div>
+        <div id="c" class="kafle roundedCorners">
+            <div class="fota f3 roundedCorners">
+
+            </div>
+            <div class="tekst roundedCorners">
+                <p class="tekst2">
+                    <b>Cross-country</b> - odmiana kolarstwa górskiego polegająca na wyścigach po specjalnie przygotowanej trasie, na której oprócz szybkich zjazdów często napotkamy techniczne i wymagające podjazdy. W cross country nie liczą się sztuczki czy skoki, znaczenie ma przede wszystkim fizyczna wytrzymałość i umiejętna jazda w terenie.
+                </p>
+            </div>
+
+        </div>
+        <div id="d" class="kafle roundedCorners">
+            <div class="fota f4 roundedCorners">
+
+            </div>
+            <div class="tekst roundedCorners">
+                <p class="tekst2">
+                    <b>Enduro</b> - to bardzo szeroki termin oznaczający pierwotnie dyscyplinę polegającą na ściganiu się na szybkich zjazdach oraz łączących je podjazdach. W enduro wytrzymałość fizyczna nie ma aż takiego znaczenia jak w cross-country, dużo większą rolę odgrywa opanowanie roweru w dość trudnym terenie przy dużej prędkości.
+                </p>
+            </div>
+
+        </div>
+        <div id="e" class="kafle roundedCorners">
+            <div class="fota f5 roundedCorners">
+
+            </div>
+            <div class="tekst roundedCorners">
+                <p class="tekst2">
+                    <b>Dirt</b> - dyscyplina rowerowa polegająca na wykonywaniu skomplikowanych ewolucji na specjalnie do tego przygotowanym torze. Tor do dirtu nie posiada elementów terenowych, nawierzchnia jest równa. Natomiast skocznie występujące na nim są strome i bardzo techniczne. Rowery do dirtu to hybryda roweru górskiego i bmx. W dircie nie liczy się czas przejazdu, a wykonane akrobacje i styl jazdy.
+                </p>
+            </div>
+
+        </div>
+        <div id="f" class="kafle roundedCorners">
+            <div class="fota f6 roundedCorners">
+
+            </div>
+            <div class="tekst roundedCorners">
+                <p class="tekst2">
+                    <b>Trial</b> - to nawiązująca do trialu motorowego dyscyplina kolarska, polegająca na pokonywaniu krótkich, ale niezwykle trudnych odcinków. Są one nacechowane głazami, pniami, czy skałami lub elementami miejskiej infrastruktury, na które zawodnik musi wskoczyć lub z nich zeskoczyć. Przejazdy trialowe są powolne, lecz wymagają niezwykłego wyczucia roweru.
+                </p>
+            </div>
+
+        </div>
+        
+        <!-- Przycisk do przewijania -->
+        <a href="#" class="scrollup">
+        </a>
+
+        <!-- Stopka strony -->
+        <div id="footer">
+            <div class="wrapper">
+
+                <div class="button">
+                    <a href="https://www.facebook.com/Bikepark-Bojanowski-Rumia-104075581445177">
+                        <div class="icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <span>Facebook</span>
+                    </a>
+                </div>
+
+                <div class="button">
+                    <a href="https://twitter.com/AwesomeCycling/status/1188409137526296576">
+                        <div class="icon">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <span>Twitter</span>
+                    </a>
+                </div>
+
+                <div class="button">
+                    <a href="https://www.instagram.com/kamil_staluszka/">
+                        <div class="icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+
+
+                <div class="button">
+                    <a href="https://www.youtube.com/channel/UC1LRk5EnB1tojBDYCdFlU2g">
+                        <div class="icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <span>YouTube</span>
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
